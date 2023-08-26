@@ -1,0 +1,12 @@
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\bin\Debug\net6.0\TodoList.BLL.deps.json
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\bin\Debug\net6.0\TodoList.BLL.dll
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\bin\Debug\net6.0\TodoList.BLL.pdb
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\obj\Debug\net6.0\TodoList.BLL.csproj.AssemblyReference.cache
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\obj\Debug\net6.0\TodoList.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\obj\Debug\net6.0\TodoList.BLL.AssemblyInfoInputs.cache
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\obj\Debug\net6.0\TodoList.BLL.AssemblyInfo.cs
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\obj\Debug\net6.0\TodoList.BLL.csproj.CoreCompileInputs.cache
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\obj\Debug\net6.0\TodoList.BLL.dll
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\obj\Debug\net6.0\refint\TodoList.BLL.dll
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\obj\Debug\net6.0\TodoList.BLL.pdb
+C:\Users\hchoudha\Desktop\todo\TodoList\TodoList.BLL\obj\Debug\net6.0\ref\TodoList.BLL.dll

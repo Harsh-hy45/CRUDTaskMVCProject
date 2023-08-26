@@ -1,0 +1,87 @@
+﻿@model IEnumerable<DataAccessLayer.Model.Objective>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO List</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h2>
+                Add your Task
+                <a asp-controller="Objective" asp-action="AddTask">
+                <span class="add-task-icon">
+                    <i class="fa fa-plus"></i>
+                </span>
+                </a>
+            </h2>
+        </div>
+        <input id="search-bar" type="text" placeholder="Search..">
+    </header>
+    <hr>
+    <h3>Your Tasks</h3>
+    <main>
+        <section class="task-list">
+
+            <table id="task-table">
+
+                <thead>
+                    <tr class="heading">
+                        <th>Status</th>
+                        <th>Title</th>
+                        <th>Complete By</th>
+                        <th>Completed On</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tasks">
+                  @foreach(var obj in Model)
+                    {
+                        <tr class="task">
+                            <td>
+                                <label class="checkbox-container">
+                                    <input class="complete-checkbox" type="checkbox" ${task.completed ? "checked" : "" }>
+                                    <span class="checkmark"><el>
+                            </td>
+                            <td class="content">
+                                <input class="task-title" type="text" value="@obj.Title" readonly>
+                            </td>
+                            <td>
+                                <input class="task-completeby" type="text" value="@obj.CompleteByDate" readonly>
+                            </td>
+                            <td>
+                                <input class="task-completedon" type="text" value="@obj.CompletedDate" readonly>
+                            </td>
+                            <td class="actions">
+                                <button class="view">View</button>
+                                <a asp-controller="Objective" asp-action="EditTask" asp-route-id="@obj.TaskId">
+                                    <button class="edit">Edit</button>
+                                </a>
+                                <button class="delete-btn"><i class="fa fa-trash" aria-hidden="true" class="delete-icon"></i></button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <div id="delete-modal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to delete this task?</p>
+            <button id="confirm-delete" class="delete-btn">Delete</button>
+            <button id="cancel-delete" class="cancel-btn">Cancel</button>
+        </div>
+    </div>
+
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>

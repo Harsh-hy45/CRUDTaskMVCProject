@@ -1,0 +1,24 @@
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\bin\Debug\net6.0\Global.Entity.deps.json
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\bin\Debug\net6.0\Global.Entity.dll
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\bin\Debug\net6.0\Global.Entity.pdb
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.csproj.AssemblyReference.cache
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.AssemblyInfoInputs.cache
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.AssemblyInfo.cs
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.csproj.CoreCompileInputs.cache
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.dll
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\obj\Debug\net6.0\refint\Global.Entity.dll
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.pdb
+C:\Users\hchoudha\Desktop\todo\TodoList\Global.Entity\obj\Debug\net6.0\ref\Global.Entity.dll
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\bin\Debug\net6.0\Global.Entity.deps.json
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\bin\Debug\net6.0\Global.Entity.dll
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\bin\Debug\net6.0\Global.Entity.pdb
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.csproj.AssemblyReference.cache
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.AssemblyInfoInputs.cache
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.AssemblyInfo.cs
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.csproj.CoreCompileInputs.cache
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.dll
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\obj\Debug\net6.0\refint\Global.Entity.dll
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\obj\Debug\net6.0\Global.Entity.pdb
+C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\obj\Debug\net6.0\ref\Global.Entity.dll
