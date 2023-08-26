@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Global.Entity
-build_property.ProjectDir = c:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Global.Entity\
+build_property.ProjectDir = c:\Users\hchoudha\Desktop\MVC Project github\CRUDTaskMVCProject\MVC\TodoList\Global.Entity\
