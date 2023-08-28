@@ -1,0 +1,63 @@
+﻿@model DataAccessLayer.Model.Objective
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details</title>
+    <link rel="stylesheet" href="~/css/details.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Details</h1>
+        <div id="task-details">
+            <div class="details-row">
+                <div class="details-column">Title:</div>
+                <div class="details-value" id="task-title">@Model.Title</div>
+            </div>
+            <div class="details-row">
+                <div class="details-column">Description:</div>
+                <div class="details-value description" id="task-description">@Model.Description</div>
+            </div>
+            <div class="details-row">
+                <div class="details-column">Complete By:</div>
+                <div class="details-value" id="complete-by-date">@Model.CompleteByDate.ToShortDateString()</div>
+            </div>
+            <div class="details-row">
+                <div class="details-column">Created On:</div>
+                <div class="details-value">
+                    <span id="created-on-date">@Model.CreatedDate.ToShortDateString()</span>
+                    <span class="date-time-separator">&nbsp;&nbsp;</span> 
+                    <span id="created-on-time">@Model.CreatedDate.ToShortTimeString()</span>
+                </div>
+            </div>
+            <div class="details-row">
+                <div class="details-column">Updated On:</div>
+                <div class="details-value">
+                    <span id="updated-on-date">@Model.UpdatedDate.ToShortDateString()</span>
+                    <span class="date-time-separator">&nbsp;&nbsp;</span>
+                    <span id="updated-on-time">@Model.UpdatedDate.ToShortTimeString()</span>
+                </div>
+            </div>
+            <div class="details-row">
+                <div class="details-column">Completed On:</div>
+                <div class="details-value">
+                    @if (Model.CompletedDate.HasValue)
+                    {
+                        <span id="completed-on-date">@Model.CompletedDate.Value.ToShortDateString()</span>
+                    }
+                    else
+                    {
+                        <span id="completed-on-date">Not completed yet</span>
+                    }
+                </div>
+            </div>
+        </div>
+        <a asp-controller="Objective" asp-action="Index">Back to Tasks</a>
+    </div>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+</body>
+</html>

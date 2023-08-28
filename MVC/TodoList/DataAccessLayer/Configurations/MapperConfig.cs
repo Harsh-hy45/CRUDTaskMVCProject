@@ -14,7 +14,6 @@ namespace DataAccessLayer.Configurations
         public MapperConfig() 
         {
             CreateMap<Objective, CreateEditTaskDTO>().ReverseMap();
-            CreateMap<Objective,UpdateTaskDTO>().ReverseMap();
         }
     }
 }

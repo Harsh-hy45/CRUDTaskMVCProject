@@ -17,10 +17,10 @@
         <div class="header-content">
             <h2>
                 Add your Task
-                <a asp-controller="Objective" asp-action="AddTask">
-                <span class="add-task-icon">
-                    <i class="fa fa-plus"></i>
-                </span>
+                <a asp-controller="Objective" asp-action="TaskForm">
+                    <span class="add-task-icon">
+                        <i class="fa fa-plus"></i>
+                    </span>
                 </a>
             </h2>
         </div>
@@ -44,7 +44,7 @@
                 </thead>
 
                 <tbody id="tasks">
-                  @foreach(var obj in Model)
+                    @foreach (var obj in Model)
                     {
                         <tr class="task">
                             <td>
@@ -56,17 +56,26 @@
                                 <input class="task-title" type="text" value="@obj.Title" readonly>
                             </td>
                             <td>
-                                <input class="task-completeby" type="text" value="@obj.CompleteByDate" readonly>
+                                <input class="task-completeby" type="text" value="@obj.CompleteByDate.ToShortDateString()" readonly>
                             </td>
                             <td>
-                                <input class="task-completedon" type="text" value="@obj.CompletedDate" readonly>
+                                @if(obj.CompletedDate.HasValue)
+                                {
+                                    <input class="task-completedon" type="text" value="@obj.CompletedDate.Value.ToShortDateString()" readonly>
+                                }
                             </td>
                             <td class="actions">
-                                <button class="view">View</button>
-                                <a asp-controller="Objective" asp-action="EditTask" asp-route-id="@obj.TaskId">
-                                    <button class="edit">Edit</button>
-                                </a>
-                                <button class="delete-btn"><i class="fa fa-trash" aria-hidden="true" class="delete-icon"></i></button>
+                                <button class="view">
+                                    <a asp-controller="Objective" asp-action="Details" asp-route-id="@obj.TaskId">View</a>
+                                </button>
+                                <button class="edit">
+                                    <a asp-controller="Objective" asp-action="TaskForm" asp-route-id="@obj.TaskId">Edit</a>
+                                </button>
+                                <div class="open-delete-modal" data-task-id="@obj.TaskId">
+                                    <button class="delete-btn">
+                                        <i class="fa fa-trash" aria-hidden="true" class="delete-icon"></i>
+                                    </button>
+                                </div>
                             </td>
                         </tr>
                     }
@@ -77,8 +86,10 @@
     <div id="delete-modal" class="modal">
         <div class="modal-content">
             <p>Are you sure you want to delete this task?</p>
-            <button id="confirm-delete" class="delete-btn">Delete</button>
-            <button id="cancel-delete" class="cancel-btn">Cancel</button>
+            <div class="actions">
+                <button id="confirm-delete" class="delete-btn">Delete</button>
+                <button id="cancel-delete" class="cancel-btn">Cancel</button>
+            </div>
         </div>
     </div>
 

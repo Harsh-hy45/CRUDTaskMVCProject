@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.DTO
 {
-    public class CreateTaskDTO
+    public class CreateEditTaskDTO
     {
         public int TaskId { get; set; }
         public string Title { get; set; }

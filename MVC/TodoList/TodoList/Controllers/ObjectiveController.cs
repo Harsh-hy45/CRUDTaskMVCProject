@@ -3,6 +3,8 @@ using DataAccessLayer.Data;
 using DataAccessLayer.DTO;
 using DataAccessLayer.Model;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace TodoList.Controllers
 {
@@ -12,7 +14,7 @@ namespace TodoList.Controllers
         private readonly IMapper _mapper;
         public ObjectiveController(ApplicationDbContext db, IMapper mapper)
         {
-            _dbcontext = db;    
+            _dbcontext = db;
             _mapper = mapper;
         }
         public IActionResult Index()
@@ -20,59 +22,66 @@ namespace TodoList.Controllers
             IEnumerable<Objective> taskList = _dbcontext.Objective;
             return View(taskList);
         }
-        //GET
-        
-        public IActionResult AddTask()
+        public IActionResult TaskForm(int? id)
         {
-            return View();
+            if (id.HasValue)
+            {
+                var taskFromDb = _dbcontext.Objective.FirstOrDefault(u => u.TaskId == id);
+                if (taskFromDb == null)
+                {
+                    return NotFound();
+                }
+                var editTaskDTO = _mapper.Map<CreateEditTaskDTO>(taskFromDb);
+                return View(editTaskDTO);
+            }
+            return View(new CreateEditTaskDTO());
         }
 
-        //POST
         [HttpPost]
-        public IActionResult AddTask(CreateTaskDTO obj)
-        {
-            
-            if(ModelState.IsValid)
-            {
-                var databaseobj = _mapper.Map<Objective>(obj);
-                _dbcontext.Objective.Add(databaseobj);
-                _dbcontext.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(obj);
-        }
-
-        public IActionResult EditTask(int? id)
-        {
-            if (id == null || id == 0)
-            {
-                return NotFound();
-            }
-            var taskFromDb = _dbcontext.Objective.FirstOrDefault(u => u.TaskId == id);
-            if (taskFromDb == null)
-            {
-                return NotFound();
-            }
-            var newobj = _mapper.Map<UpdateTaskDTO>(taskFromDb);
-            return View(newobj);
-        }
-
-        //POST
-        [HttpPost]
-        public IActionResult EditTask(UpdateTaskDTO obj)
+        public IActionResult TaskForm(CreateEditTaskDTO obj)
         {
             if (ModelState.IsValid)
             {
-                 var updatedDatabaseObj = _mapper.Map<Objective>(obj);
-                updatedDatabaseObj.Title = obj.Title;
-                updatedDatabaseObj.Description = obj.Description;
-                updatedDatabaseObj.CompleteByDate = obj.CompleteByDate;
-                updatedDatabaseObj.UpdatedDate = obj.UpdatedDate;
-
+                if (obj.TaskId > 0)
+                {
+                    var taskFromDb = _dbcontext.Objective.FirstOrDefault(u => u.TaskId == obj.TaskId);
+                    if (taskFromDb == null)
+                    {
+                        return NotFound();
+                    }
+                    _mapper.Map(obj, taskFromDb);
+                }
+                else
+                {
+                    var databaseobj = _mapper.Map<Objective>(obj);
+                    _dbcontext.Objective.Add(databaseobj);
+                }
                 _dbcontext.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(obj);
+        }
+
+        public async Task<IActionResult> DeleteTask(int id)
+        {
+            var taskToDelete = await _dbcontext.Objective.FirstOrDefaultAsync(u => u.TaskId == id);
+            if(taskToDelete==null)
+            {
+                return NotFound();
+            }
+            _dbcontext.Objective.Remove(taskToDelete);
+            await _dbcontext.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Details(int id) 
+        {
+            var taskToView=_dbcontext.Objective.FirstOrDefault(u=>u.TaskId== id);
+            if(taskToView==null)
+            {
+                return NotFound();
+            }
+            return View(taskToView);
         }
     }
 }

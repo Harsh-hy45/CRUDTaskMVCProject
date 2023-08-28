@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\TodoList.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\TodoList\\wwwroot\\css\\details.css",
+      "PackagePath": "staticwebassets\\css\\details.css"
+    },
+    {
       "Id": "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\TodoList\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -15,6 +19,18 @@
     {
       "Id": "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\TodoList\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\TodoList\\wwwroot\\js\\code.jquery.com_jquery-3.7.0.min.js",
+      "PackagePath": "staticwebassets\\js\\code.jquery.com_jquery-3.7.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\TodoList\\wwwroot\\js\\details.js",
+      "PackagePath": "staticwebassets\\js\\details.js"
+    },
+    {
+      "Id": "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\TodoList\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
     },
     {
       "Id": "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\TodoList\\wwwroot\\js\\site.js",
