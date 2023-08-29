@@ -25,10 +25,6 @@
       "PackagePath": "staticwebassets\\js\\code.jquery.com_jquery-3.7.0.min.js"
     },
     {
-      "Id": "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\TodoList\\wwwroot\\js\\details.js",
-      "PackagePath": "staticwebassets\\js\\details.js"
-    },
-    {
       "Id": "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\TodoList\\wwwroot\\js\\script.js",
       "PackagePath": "staticwebassets\\js\\script.js"
     },

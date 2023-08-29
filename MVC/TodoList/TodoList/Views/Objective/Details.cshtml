@@ -48,6 +48,8 @@
                     @if (Model.CompletedDate.HasValue)
                     {
                         <span id="completed-on-date">@Model.CompletedDate.Value.ToShortDateString()</span>
+                        <span class="date-time-separator">&nbsp;&nbsp;</span> 
+                        <span id="created-on-time">@Model.CompletedDate.Value.ToShortTimeString()</span>
                     }
                     else
                     {

@@ -12,5 +12,6 @@ namespace DataAccessLayer.DTO
         public string Title { get; set; }
         public string? Description { get; set; }
         public DateTime CompleteByDate { get; set; }
+        public DateTime UpdatedDate { get; set;}=DateTime.Now;  
     }
 }

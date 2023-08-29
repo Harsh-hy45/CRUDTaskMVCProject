@@ -83,5 +83,25 @@ namespace TodoList.Controllers
             }
             return View(taskToView);
         }
+
+        [Route("Objective/ToggleCompleted/{taskId}")]
+        public IActionResult ToggleCompleted(int taskId)
+        {
+            var taskFromDb= _dbcontext.Objective.FirstOrDefault(u=>u.TaskId==taskId);
+            if(taskFromDb!=null)
+            {
+                if(taskFromDb.CompletedDate.HasValue)
+                {
+                    taskFromDb.CompletedDate=null;
+                }
+                else
+                {
+                    taskFromDb.CompletedDate =DateTime.Now;
+                }
+
+                _dbcontext.SaveChanges();
+            }
+            return RedirectToAction("Index");
+        }
     }
 }

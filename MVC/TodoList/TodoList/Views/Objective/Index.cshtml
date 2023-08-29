@@ -48,9 +48,10 @@
                     {
                         <tr class="task">
                             <td>
-                                <label class="checkbox-container">
-                                    <input class="complete-checkbox" type="checkbox" ${task.completed ? "checked" : "" }>
-                                    <span class="checkmark"><el>
+                                <a asp-action="ToggleCompleted" asp-route-id="@obj.TaskId" class="checkbox-container">
+                                    <input class="complete-checkbox" type="checkbox" checked="@obj.CompletedDate">
+                                    <span class="checkmark"></span>
+                                </a>
                             </td>
                             <td class="content">
                                 <input class="task-title" type="text" value="@obj.Title" readonly>
@@ -59,17 +60,21 @@
                                 <input class="task-completeby" type="text" value="@obj.CompleteByDate.ToShortDateString()" readonly>
                             </td>
                             <td>
-                                @if(obj.CompletedDate.HasValue)
+                                @if (obj.CompletedDate.HasValue)
                                 {
                                     <input class="task-completedon" type="text" value="@obj.CompletedDate.Value.ToShortDateString()" readonly>
+                                }
+                                else
+                                {
+                                    <input class="task-completedon" type="text" value="In Progress..." readonly>
                                 }
                             </td>
                             <td class="actions">
                                 <button class="view">
                                     <a asp-controller="Objective" asp-action="Details" asp-route-id="@obj.TaskId">View</a>
                                 </button>
-                                <button class="edit">
-                                    <a asp-controller="Objective" asp-action="TaskForm" asp-route-id="@obj.TaskId">Edit</a>
+                                <button class="edit" hidden="@obj.CompletedDate">
+                                    <a asp-controller="Objective" asp-action="TaskForm" asp-route-id="@obj.TaskId" id="editbutton">Edit</a>
                                 </button>
                                 <div class="open-delete-modal" data-task-id="@obj.TaskId">
                                     <button class="delete-btn">
