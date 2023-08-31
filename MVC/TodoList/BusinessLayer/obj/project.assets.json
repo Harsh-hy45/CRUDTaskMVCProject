@@ -1319,7 +1319,6 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
-          "Global.Entity": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.9",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
@@ -1329,16 +1328,6 @@
         },
         "runtime": {
           "bin/placeholder/DataAccessLayer.dll": {}
-        }
-      },
-      "Global.Entity/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Global.Entity.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Global.Entity.dll": {}
         }
       }
     }
@@ -3893,17 +3882,11 @@
       "type": "project",
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
-    },
-    "Global.Entity/1.0.0": {
-      "type": "project",
-      "path": "../Global.Entity/Global.Entity.csproj",
-      "msbuildProject": "../Global.Entity/Global.Entity.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DataAccessLayer >= 1.0.0",
-      "Global.Entity >= 1.0.0"
+      "DataAccessLayer >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3935,9 +3918,6 @@
           "projectReferences": {
             "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\DataAccessLayer\\DataAccessLayer.csproj": {
               "projectPath": "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\DataAccessLayer\\DataAccessLayer.csproj"
-            },
-            "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\Global.Entity\\Global.Entity.csproj": {
-              "projectPath": "C:\\Users\\hchoudha\\Desktop\\new jQuery\\branchsalesweb.sampleapps\\MVC\\TodoList\\Global.Entity\\Global.Entity.csproj"
             }
           }
         }

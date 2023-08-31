@@ -1073,12 +1073,8 @@ C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Todo
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
-C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\bin\Debug\net6.0\BusinessLayer.dll
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\bin\Debug\net6.0\DataAccessLayer.dll
-C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\bin\Debug\net6.0\Global.Entity.dll
-C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\bin\Debug\net6.0\BusinessLayer.pdb
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\bin\Debug\net6.0\DataAccessLayer.pdb
-C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\bin\Debug\net6.0\Global.Entity.pdb
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\obj\Debug\net6.0\TodoList.csproj.AssemblyReference.cache
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\obj\Debug\net6.0\TodoList.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\TodoList\obj\Debug\net6.0\TodoList.AssemblyInfoInputs.cache

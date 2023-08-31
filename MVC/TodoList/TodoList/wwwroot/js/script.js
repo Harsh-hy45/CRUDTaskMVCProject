@@ -1,4 +1,17 @@
-﻿$(document).ready(function () {
+﻿function filterTasks() {
+    var searchString = document.getElementById("search-bar").value;
+
+    $.ajax({
+        type: "GET",
+        url: "/Objective/SearchTasks",
+        data: { searchString: searchString },
+        success: function (result) {
+            $("#tasks").html(result);
+        }
+    });
+}
+
+$(document).ready(function () {
     var taskIdToDelete;
 
     $(".open-delete-modal").click(function () {

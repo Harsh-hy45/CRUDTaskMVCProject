@@ -1,14 +1,29 @@
 ﻿@model DataAccessLayer.DTO.CreateEditTaskDTO
 
+<head>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <div class="modal-content">
+        <form id="task-form" method="post">
+            <input type="hidden" asp-for="TaskId" />
+            <input type="text" asp-for="Title" class="task-title" id="task-title" placeholder="What are your plans?" />
+            <span asp-validation-for="Title" class="form-validation"></span>
 
-<div class="modal-content">
-    <form id="task-form" method="post">
-        <input type="hidden" asp-for="TaskId" />
-        <input type="text" asp-for="Title" class="task-title" placeholder="What are your plans?" />
-        <textarea asp-for="Description" class="resizable-textarea" rows="4" cols="20"></textarea>
-        <label for="complete-by-date">Complete By Date:</label>
-        <input asp-for="CompleteByDate" type="date" class="complete-by-date" />
-        <input type="submit" id="task-submit" value="@(Model.TaskId > 0 ? "Update" : "Add") task" />
-        <input type="reset" id="reset-form" value="Clear" />
-    </form>
-</div>
+            <textarea asp-for="Description" class="resizable-textarea" id="resizable-textarea" rows="4" cols="20"></textarea>
+            <span asp-validation-for="Description" class="form-validation"></span>
+
+            <label for="complete-by-date">Complete By Date:</label>
+            <input asp-for="CompleteByDate" type="date" class="complete-by-date" id="complete-by-date" value="@DateTime.Now" />
+            <span asp-validation-for="CompleteByDate" class="form-validation"></span>
+
+            <input type="submit" id="task-submit" value="@(Model.TaskId > 0 ? "Update" : "Add") task" />
+
+            <a asp-controller="Objective" asp-action="Index"><input id="back-to-task" value="Back"></a>
+        </form>
+    </div>
+
+</body>
+
+
+

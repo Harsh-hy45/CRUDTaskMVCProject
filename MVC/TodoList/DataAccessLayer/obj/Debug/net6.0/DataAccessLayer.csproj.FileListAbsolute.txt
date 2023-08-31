@@ -573,14 +573,11 @@ C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\Data
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\bin\Debug\net6.0\refs\System.Xml.XPath.dll
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\bin\Debug\net6.0\refs\System.Xml.XPath.XDocument.dll
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\bin\Debug\net6.0\refs\WindowsBase.dll
-C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\bin\Debug\net6.0\Global.Entity.dll
-C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\bin\Debug\net6.0\Global.Entity.pdb
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
-C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
 C:\Users\hchoudha\Desktop\new jQuery\branchsalesweb.sampleapps\MVC\TodoList\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb

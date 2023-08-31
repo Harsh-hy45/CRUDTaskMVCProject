@@ -90,19 +90,9 @@ input, button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.close-btn {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.delete-modal{
+    width:fit-content;
 }
-
-    .close-btn:hover,
-    .close-btn:focus {
-        color: red;
-        text-decoration: none;
-        cursor: pointer;
-    }
 
 .delete-btn {
     color: #a13a33;
@@ -210,24 +200,7 @@ input, button {
         opacity: 0.6;
     }
 
-#task-submit:disabled {
-    padding: 10px 15px;
-    font-size: 1rem;
-    font-weight: 700;
-    background-color: red;
-    cursor: not-allowed !important;
-    background-image: none !important;
-    -webkit-text-fill-color: initial;
-    -moz-text-fill-color: initial;
-    border: none;
-    transition: 0.4s;
-    border-radius: 4px;
-    margin-right: 10px;
-    margin: 0 auto;
-    display: block;
-}
-
-#reset-form {
+#reset-form,#back-to-task {
     padding: 10px 15px;
     font-size: 1rem;
     width: 90px;
@@ -235,10 +208,14 @@ input, button {
     color: white;
     border: none;
     border-radius: 4px;
+    text-align:center;
     cursor: pointer;
     margin-right: 10px;
     margin: 0 auto;
     display: block;
+}
+.separator{
+    height:20px;
 }
 
     #reset-form:hover {
@@ -369,10 +346,9 @@ hr {
     color: var(--light);
 }
 
-.error-message {
+.form-validation {
     color: red;
     font-size: 14px;
-    display: none;
     margin-bottom: 1rem;
 }
 

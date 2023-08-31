@@ -21,8 +21,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Global.Entity\Global.Entity.csproj" />
-  </ItemGroup>
-
 </Project>
